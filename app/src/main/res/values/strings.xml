@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">GOF_Patterns</string>
+
+    <string name="testObserver">test Observer</string>
+    <string name="set_new_value">set new value</string>
+    <string name="this_text_will_change">this text will change</string>
+
+</resources>

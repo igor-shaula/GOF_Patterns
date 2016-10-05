@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/MatchMatch"
+    android:padding="@dimen/size_16"
+    tools:context="igor.shaula.gof_patterns.general_classes.MainActivity">
+
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/WrapWrap"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/this_text_will_change"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/etNewData"
+        style="@style/MatchWrap.Gravity_Center"
+        android:layout_below="@id/tvResult"
+        android:hint="@string/set_new_value"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/bTestObserver"
+        style="@style/MatchWrap"
+        android:layout_alignParentBottom="true"
+        android:text="@string/testObserver" />
+
+</RelativeLayout>
