@@ -23,10 +23,27 @@
         android:inputType="numberDecimal"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
-    <Button
-        android:id="@+id/bTestObserver"
-        style="@style/MatchWrap"
+    <ScrollView
+        style="@style/MatchMatch"
         android:layout_alignParentBottom="true"
-        android:text="@string/testObserver" />
+        android:layout_below="@id/etNewData">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bTestObserver"
+                style="@style/MatchWrap"
+                android:text="@string/testObserver" />
+
+            <Button
+                android:id="@+id/bTestChainOfResponsibility"
+                style="@style/MatchWrap"
+                android:text="@string/testChainOfResponsibility" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>

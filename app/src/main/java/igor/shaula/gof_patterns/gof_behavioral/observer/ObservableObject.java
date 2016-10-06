@@ -1,4 +1,4 @@
-package igor.shaula.gof_patterns.observer;
+package igor.shaula.gof_patterns.gof_behavioral.observer;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -7,6 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import igor.shaula.gof_patterns.R;
+import igor.shaula.gof_patterns.utils.PSF;
 
 /**
  * @author igor shaula \
@@ -22,7 +23,7 @@ public class ViewAgent implements View.OnClickListener {
 
     // implemented by calling activity \
     public interface Caller {
-        void receiveNew(int value);
+        void receiveNew(String pattern, int value);
     }
 
     public ViewAgent(Caller caller, View rootView) {
@@ -31,13 +32,27 @@ public class ViewAgent implements View.OnClickListener {
 
         tvResult = (TextView) rootView.findViewById(R.id.tvResult);
         etNewData = (EditText) rootView.findViewById(R.id.etNewData);
-        Button bTestObserver = (Button) rootView.findViewById(R.id.bTestObserver);
 
+        Button bTestObserver = (Button) rootView.findViewById(R.id.bTestObserver);
         bTestObserver.setOnClickListener(this);
+
+        Button bTestChainOfResponsibility = (Button) rootView.findViewById(R.id.bTestChainOfResponsibility);
+        bTestChainOfResponsibility.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
+
+        String pattern = null;
+
+        switch (v.getId()) {
+            case R.id.bTestObserver:
+                pattern = PSF.OBSERVER;
+                break;
+            case R.id.bTestChainOfResponsibility:
+                pattern = PSF.CHAIN_OF_RESPONSIBILITY;
+                break;
+        }
 
         Editable newData = etNewData.getText();
 
@@ -52,8 +67,9 @@ public class ViewAgent implements View.OnClickListener {
                 value = Integer.MIN_VALUE;
             }
         }
-        mCaller.receiveNew(value);
-    }
+        mCaller.receiveNew(pattern, value);
+
+    } // end of onClick-method \\
 
     public void updateText(CharSequence newText) {
         tvResult.setText(newText);
