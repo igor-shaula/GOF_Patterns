@@ -21,6 +21,6 @@ public class ObserverObject implements MyObserver {
     // is invoked from interface inside Observable - here we only receive new data \
     @Override
     public void update(int newValue) {
-        answerFromPattern.onJobDone(newValue);
+        answerFromPattern.onJobDone("received from observable: " + newValue);
     }
 }

@@ -19,7 +19,8 @@ public class EntryCommand {
 
     public void doTheJob(int value) {
 
-        Project project = new Project();
+        // arguments are inserted in constructor to enable obvious feedback for a user \
+        Project project = new Project(answerFromPattern, value);
 
         Command roleSales = new RoleSales(project);
         Command roleDesigner = new RoleDesigner(project);

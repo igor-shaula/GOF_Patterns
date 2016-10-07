@@ -6,5 +6,5 @@ package igor.shaula.gof_patterns.general_classes;
  * @author igor shaula \
  */
 public interface AnswerFromPattern {
-    void onJobDone(int valueOut);
+    void onJobDone(String result);
 }

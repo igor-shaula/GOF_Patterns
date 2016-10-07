@@ -28,6 +28,21 @@ public class EntryChainOfResponsibility {
 
         Requirement requirement = new Requirement(value);
         int stepsOfRecursion = juniorDeveloper.findExecutorFor(requirement, 0);
-        answerFromPattern.onJobDone(stepsOfRecursion);
+
+        String result;
+        switch (stepsOfRecursion) {
+            case 1:
+                result = "this job is for junior developer";
+                break;
+            case 2:
+                result = "this job is for middle developer";
+                break;
+            case 3:
+                result = "this job is for senior developer";
+                break;
+            default:
+                result = "this job requires too much experience";
+        }
+        answerFromPattern.onJobDone(result);
     }
 }

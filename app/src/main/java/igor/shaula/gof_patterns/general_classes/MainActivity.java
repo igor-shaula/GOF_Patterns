@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     @Override
-    public void onJobDone(int valueOut) {
-        mViewAgent.updateText(String.valueOf(valueOut));
+    public void onJobDone(String result) {
+        mViewAgent.updateText(result);
     }
 }
