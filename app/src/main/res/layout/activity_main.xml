@@ -42,6 +42,11 @@
                 style="@style/MatchWrap"
                 android:text="@string/testChainOfResponsibility" />
 
+            <Button
+                android:id="@+id/bTestCommand"
+                style="@style/MatchWrap"
+                android:text="@string/testCommand" />
+
         </LinearLayout>
 
     </ScrollView>

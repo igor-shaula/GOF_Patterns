@@ -12,6 +12,7 @@ public class PSF {
 
     public static final String OBSERVER = "Observer";
     public static final String CHAIN_OF_RESPONSIBILITY = "ChainOfResponsibility";
+    public static final String COMMAND = "Command";
 }
 /*
 // SOME EXPLANATION ================================================================================

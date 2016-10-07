@@ -6,5 +6,6 @@
     <string name="set_new_value">set new value</string>
     <string name="this_text_will_change">this text will change</string>
     <string name="testChainOfResponsibility">test Chain Of Responsibility</string>
+    <string name="testCommand">test command</string>
 
 </resources>

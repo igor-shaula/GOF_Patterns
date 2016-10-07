@@ -38,6 +38,9 @@ public class ViewAgent implements View.OnClickListener {
 
         Button bTestChainOfResponsibility = (Button) rootView.findViewById(R.id.bTestChainOfResponsibility);
         bTestChainOfResponsibility.setOnClickListener(this);
+
+        Button bTestCommand = (Button) rootView.findViewById(R.id.bTestCommand);
+        bTestCommand.setOnClickListener(this);
     }
 
     @Override
@@ -51,6 +54,9 @@ public class ViewAgent implements View.OnClickListener {
                 break;
             case R.id.bTestChainOfResponsibility:
                 pattern = PSF.CHAIN_OF_RESPONSIBILITY;
+                break;
+            case R.id.bTestCommand:
+                pattern = PSF.COMMAND;
                 break;
         }
 

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import igor.shaula.gof_patterns.R;
 import igor.shaula.gof_patterns.gof_behavioral.chain_of_responsibility.EntryChainOfResponsibility;
+import igor.shaula.gof_patterns.gof_behavioral.command.EntryCommand;
 import igor.shaula.gof_patterns.gof_behavioral.observer.EntryObserver;
 import igor.shaula.gof_patterns.utils.PSF;
 
@@ -34,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements
                         new EntryChainOfResponsibility(this);
                 entryChainOfResponsibility.doTheJob(value);
                 break;
+            case PSF.COMMAND:
+                EntryCommand entryCommand = new EntryCommand(this);
+                entryCommand.doTheJob(value);
         }
     }
 

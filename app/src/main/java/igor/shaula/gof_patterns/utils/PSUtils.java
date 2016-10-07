@@ -2,8 +2,13 @@ package igor.shaula.gof_patterns.utils;
 
 import android.app.ActivityManager;
 import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * shared methods container \
@@ -58,5 +63,16 @@ public class PSUtils {
             if (serviceClass.getName().equals(service.service.getClassName())) return true;
         }
         return false;
+    }
+
+    public static List<String> getAllSensorNames(Context context) {
+        SensorManager sensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
+        List<Sensor> listSensor = sensorManager.getSensorList(Sensor.TYPE_ALL);
+
+        List<String> listSensorType = new ArrayList<>();
+        for (int i = 0; i < listSensor.size(); i++) {
+            listSensorType.add(listSensor.get(i).getName());
+        }
+        return listSensorType;
     }
 }
