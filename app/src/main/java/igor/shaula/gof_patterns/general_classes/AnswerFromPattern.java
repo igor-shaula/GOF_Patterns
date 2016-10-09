@@ -6,5 +6,7 @@ package igor.shaula.gof_patterns.general_classes;
  * @author igor shaula \
  */
 public interface AnswerFromPattern {
+
+    // the only way for a pattern to notify user about its completion and give the results of work \
     void onJobDone(String result);
 }

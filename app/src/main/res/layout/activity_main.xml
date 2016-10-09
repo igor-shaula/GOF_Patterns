@@ -47,6 +47,16 @@
                 style="@style/MatchWrap"
                 android:text="@string/testCommand" />
 
+            <Button
+                android:id="@+id/bTestInterpreter"
+                style="@style/MatchWrap"
+                android:text="@string/testInterpreter" />
+
+            <Button
+                android:id="@+id/bTestIterator"
+                style="@style/MatchWrap"
+                android:text="@string/testIterator" />
+
         </LinearLayout>
 
     </ScrollView>

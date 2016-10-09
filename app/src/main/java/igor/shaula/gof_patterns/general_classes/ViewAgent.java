@@ -23,7 +23,7 @@ public class ViewAgent implements View.OnClickListener {
 
     // implemented by calling activity \
     public interface Caller {
-        void receiveNew(String pattern, int value);
+        void obtainFromViewAgent(String pattern, int value);
     }
 
     public ViewAgent(Caller caller, View rootView) {
@@ -41,6 +41,12 @@ public class ViewAgent implements View.OnClickListener {
 
         Button bTestCommand = (Button) rootView.findViewById(R.id.bTestCommand);
         bTestCommand.setOnClickListener(this);
+
+        Button bTestInterpreter = (Button) rootView.findViewById(R.id.bTestInterpreter);
+        bTestInterpreter.setOnClickListener(this);
+
+        Button bTestIterator = (Button) rootView.findViewById(R.id.bTestIterator);
+        bTestIterator.setOnClickListener(this);
     }
 
     @Override
@@ -58,6 +64,12 @@ public class ViewAgent implements View.OnClickListener {
             case R.id.bTestCommand:
                 pattern = PSF.COMMAND;
                 break;
+            case R.id.bTestInterpreter:
+                pattern = PSF.INTERPRETER;
+                break;
+            case R.id.bTestIterator:
+                pattern = PSF.ITERATOR;
+                break;
         }
 
         Editable newData = etNewData.getText();
@@ -73,7 +85,7 @@ public class ViewAgent implements View.OnClickListener {
                 value = Integer.MIN_VALUE;
             }
         }
-        mCaller.receiveNew(pattern, value);
+        mCaller.obtainFromViewAgent(pattern, value);
 
     } // end of onClick-method \\
 

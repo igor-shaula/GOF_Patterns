@@ -7,5 +7,7 @@
     <string name="this_text_will_change">this text will change</string>
     <string name="testChainOfResponsibility">test Chain Of Responsibility</string>
     <string name="testCommand">test command</string>
+    <string name="testInterpreter">test interpreter</string>
+    <string name="testIterator">test iterator</string>
 
 </resources>

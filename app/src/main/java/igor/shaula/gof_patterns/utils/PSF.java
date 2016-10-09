@@ -13,6 +13,8 @@ public class PSF {
     public static final String OBSERVER = "Observer";
     public static final String CHAIN_OF_RESPONSIBILITY = "ChainOfResponsibility";
     public static final String COMMAND = "Command";
+    public static final String INTERPRETER = "Interpreter";
+    public static final String ITERATOR = "Iterator";
 }
 /*
 // SOME EXPLANATION ================================================================================
