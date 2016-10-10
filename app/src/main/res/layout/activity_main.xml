@@ -57,6 +57,11 @@
                 style="@style/MatchWrap"
                 android:text="@string/testIterator" />
 
+            <Button
+                android:id="@+id/bTestMediator"
+                style="@style/MatchWrap"
+                android:text="@string/testMediator" />
+
         </LinearLayout>
 
     </ScrollView>

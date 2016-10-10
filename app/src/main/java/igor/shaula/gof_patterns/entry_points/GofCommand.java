@@ -1,7 +1,6 @@
 package igor.shaula.gof_patterns.entry_points;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
-import igor.shaula.gof_patterns.gof_behavioral.command.Command;
 import igor.shaula.gof_patterns.gof_behavioral.command.Project;
 import igor.shaula.gof_patterns.gof_behavioral.command.RoleDesigner;
 import igor.shaula.gof_patterns.gof_behavioral.command.RoleDeveloper;
@@ -17,11 +16,11 @@ import igor.shaula.gof_patterns.gof_behavioral.command.Workflow;
  *
  * @author igor shaula \
  */
-public class ToCommand {
+public class GofCommand {
 
     private AnswerFromPattern answerFromPattern;
 
-    public ToCommand(AnswerFromPattern answerFromPattern) {
+    public GofCommand(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
 
@@ -30,11 +29,11 @@ public class ToCommand {
         // arguments are inserted in constructor to enable obvious feedback for a user \
         Project project = new Project(answerFromPattern, value);
 
-        Command roleSales = new RoleSales(project);
-        Command roleDesigner = new RoleDesigner(project);
-        Command roleDeveloper = new RoleDeveloper(project);
-        Command roleTester = new RoleTester(project);
-        Command roleDirector = new RoleDirector(project);
+        igor.shaula.gof_patterns.gof_behavioral.command.Command roleSales = new RoleSales(project);
+        igor.shaula.gof_patterns.gof_behavioral.command.Command roleDesigner = new RoleDesigner(project);
+        igor.shaula.gof_patterns.gof_behavioral.command.Command roleDeveloper = new RoleDeveloper(project);
+        igor.shaula.gof_patterns.gof_behavioral.command.Command roleTester = new RoleTester(project);
+        igor.shaula.gof_patterns.gof_behavioral.command.Command roleDirector = new RoleDirector(project);
 
         Workflow workflow = new Workflow(roleSales, roleDesigner, roleDeveloper, roleTester, roleDirector);
 

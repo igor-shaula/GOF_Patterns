@@ -47,6 +47,9 @@ public class ViewAgent implements View.OnClickListener {
 
         Button bTestIterator = (Button) rootView.findViewById(R.id.bTestIterator);
         bTestIterator.setOnClickListener(this);
+
+        Button bTestMediator = (Button) rootView.findViewById(R.id.bTestMediator);
+        bTestMediator.setOnClickListener(this);
     }
 
     @Override
@@ -69,6 +72,9 @@ public class ViewAgent implements View.OnClickListener {
                 break;
             case R.id.bTestIterator:
                 pattern = PSF.ITERATOR;
+                break;
+            case R.id.bTestMediator:
+                pattern = PSF.MEDIATOR;
                 break;
         }
 

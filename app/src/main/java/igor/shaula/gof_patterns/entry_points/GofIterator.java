@@ -10,11 +10,11 @@ import igor.shaula.gof_patterns.gof_behavioral.iterator.Iterator;
  *
  * @author igor shaula \
  */
-public class ToIterator {
+public class GofIterator {
 
     private AnswerFromPattern answerFromPattern;
 
-    public ToIterator(AnswerFromPattern answerFromPattern) {
+    public GofIterator(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
 

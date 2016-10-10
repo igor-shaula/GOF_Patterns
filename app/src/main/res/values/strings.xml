@@ -9,5 +9,6 @@
     <string name="testCommand">test command</string>
     <string name="testInterpreter">test interpreter</string>
     <string name="testIterator">test iterator</string>
+    <string name="testMediator">test mediator</string>
 
 </resources>

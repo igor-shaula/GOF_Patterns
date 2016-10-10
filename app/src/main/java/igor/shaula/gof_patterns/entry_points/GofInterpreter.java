@@ -12,14 +12,14 @@ import igor.shaula.gof_patterns.gof_behavioral.interpreter.OrExpression;
  *
  * @author igor shaula \
  */
-public class ToInterpreter {
+public class GofInterpreter {
 
     private static final String S_ANDROID = "Android";
     private static final String S_JAVA = "Java";
 
     private AnswerFromPattern answerFromPattern;
 
-    public ToInterpreter(AnswerFromPattern answerFromPattern) {
+    public GofInterpreter(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
 

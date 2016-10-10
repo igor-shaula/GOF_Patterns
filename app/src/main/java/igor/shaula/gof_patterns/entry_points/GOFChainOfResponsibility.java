@@ -13,11 +13,11 @@ import igor.shaula.gof_patterns.gof_behavioral.chain_of_responsibility.SeniorDev
  *
  * @author igor shaula \
  */
-public class ToChainOfResponsibility {
+public class GofChainOfResponsibility {
 
     private AnswerFromPattern answerFromPattern;
 
-    public ToChainOfResponsibility(AnswerFromPattern answerFromPattern) {
+    public GofChainOfResponsibility(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
 
