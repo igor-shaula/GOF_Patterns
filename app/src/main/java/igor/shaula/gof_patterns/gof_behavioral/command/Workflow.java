@@ -5,7 +5,6 @@ package igor.shaula.gof_patterns.gof_behavioral.command;
  *
  * @author igor shaula \
  */
-@SuppressWarnings("WeakerAccess")
 public class Workflow {
 
     private Command jobForSales;

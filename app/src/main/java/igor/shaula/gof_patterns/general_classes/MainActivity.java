@@ -4,10 +4,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import igor.shaula.gof_patterns.R;
-import igor.shaula.gof_patterns.gof_behavioral.chain_of_responsibility.EntryChainOfResponsibility;
-import igor.shaula.gof_patterns.gof_behavioral.command.EntryCommand;
-import igor.shaula.gof_patterns.gof_behavioral.interpreter.EntryInterpreter;
-import igor.shaula.gof_patterns.gof_behavioral.iterator.EntryIterator;
+import igor.shaula.gof_patterns.entry_points.ToChainOfResponsibility;
+import igor.shaula.gof_patterns.entry_points.ToCommand;
+import igor.shaula.gof_patterns.entry_points.ToInterpreter;
+import igor.shaula.gof_patterns.entry_points.ToIterator;
 import igor.shaula.gof_patterns.gof_behavioral.observer.EntryObserver;
 import igor.shaula.gof_patterns.utils.PSF;
 
@@ -32,16 +32,16 @@ public class MainActivity extends AppCompatActivity implements
                 new EntryObserver(this).doTheJob(value);
                 break;
             case PSF.CHAIN_OF_RESPONSIBILITY:
-                new EntryChainOfResponsibility(this).doTheJob(value);
+                new ToChainOfResponsibility(this).doTheJob(value);
                 break;
             case PSF.COMMAND:
-                new EntryCommand(this).doTheJob(value);
+                new ToCommand(this).doTheJob(value);
                 break;
             case PSF.INTERPRETER:
-                new EntryInterpreter(this).doTheJob(value);
+                new ToInterpreter(this).doTheJob(value);
                 break;
             case PSF.ITERATOR:
-                new EntryIterator(this).doTheJob(value);
+                new ToIterator(this).doTheJob(value);
         }
     }
 

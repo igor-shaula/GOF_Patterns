@@ -1,6 +1,10 @@
-package igor.shaula.gof_patterns.gof_behavioral.chain_of_responsibility;
+package igor.shaula.gof_patterns.entry_points;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
+import igor.shaula.gof_patterns.gof_behavioral.chain_of_responsibility.JuniorDeveloper;
+import igor.shaula.gof_patterns.gof_behavioral.chain_of_responsibility.MiddleDeveloper;
+import igor.shaula.gof_patterns.gof_behavioral.chain_of_responsibility.Requirement;
+import igor.shaula.gof_patterns.gof_behavioral.chain_of_responsibility.SeniorDeveloper;
 
 /**
  * Avoid coupling the sender of a request to its receiver
@@ -9,11 +13,11 @@ import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
  *
  * @author igor shaula \
  */
-public class EntryChainOfResponsibility {
+public class ToChainOfResponsibility {
 
     private AnswerFromPattern answerFromPattern;
 
-    public EntryChainOfResponsibility(AnswerFromPattern answerFromPattern) {
+    public ToChainOfResponsibility(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
 

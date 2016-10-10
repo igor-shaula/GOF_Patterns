@@ -8,7 +8,6 @@ import igor.shaula.gof_patterns.utils.L;
  *
  * @author igor shaula \
  */
-@SuppressWarnings("WeakerAccess")
 public class Project {
 
     private AnswerFromPattern answerFromPattern;

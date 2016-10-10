@@ -1,6 +1,10 @@
-package igor.shaula.gof_patterns.gof_behavioral.interpreter;
+package igor.shaula.gof_patterns.entry_points;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
+import igor.shaula.gof_patterns.gof_behavioral.interpreter.AndExpression;
+import igor.shaula.gof_patterns.gof_behavioral.interpreter.DataExpression;
+import igor.shaula.gof_patterns.gof_behavioral.interpreter.Expression;
+import igor.shaula.gof_patterns.gof_behavioral.interpreter.OrExpression;
 
 /**
  * Given a language, define a representation for its grammar along with an interpreter
@@ -8,14 +12,14 @@ import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
  *
  * @author igor shaula \
  */
-public class EntryInterpreter {
+public class ToInterpreter {
 
     private static final String S_ANDROID = "Android";
     private static final String S_JAVA = "Java";
 
     private AnswerFromPattern answerFromPattern;
 
-    public EntryInterpreter(AnswerFromPattern answerFromPattern) {
+    public ToInterpreter(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
 

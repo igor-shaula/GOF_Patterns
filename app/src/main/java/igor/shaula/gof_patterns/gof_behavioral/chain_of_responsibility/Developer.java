@@ -7,7 +7,6 @@ import igor.shaula.gof_patterns.utils.L;
  *
  * @author igor shaula \
  */
-@SuppressWarnings("WeakerAccess")
 public abstract class Developer {
 
     private static final String CN = "Developer ` ";

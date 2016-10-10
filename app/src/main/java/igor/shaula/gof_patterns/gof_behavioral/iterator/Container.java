@@ -3,10 +3,7 @@ package igor.shaula.gof_patterns.gof_behavioral.iterator;
 /**
  * @author igor shaula \
  */
-@SuppressWarnings("WeakerAccess")
 public class Container implements Iterable {
-
-//    private int currentLevel;
 
     private String[] wayForward = {"Trainee", "Junior", "Middle", "Senior", "TeamLead", "Architect"};
 
@@ -29,14 +26,7 @@ public class Container implements Iterable {
         public void setPosition(int index) {
             this.index = index;
         }
-
-    } // end of ContainerIterator-class \\
-
-/*
-    public Container(int value) {
-        currentLevel = value;
     }
-*/
 
     @Override
     public Iterator getIterator() {
