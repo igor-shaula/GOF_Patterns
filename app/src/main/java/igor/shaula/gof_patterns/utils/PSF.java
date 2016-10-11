@@ -16,6 +16,7 @@ public class PSF {
     public static final String INTERPRETER = "Interpreter";
     public static final String ITERATOR = "Iterator";
     public static final String MEDIATOR = "Mediator";
+    public static final String MEMENTO = "Memento";
 }
 /*
 // SOME EXPLANATION ================================================================================

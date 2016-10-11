@@ -10,5 +10,6 @@
     <string name="testInterpreter">test interpreter</string>
     <string name="testIterator">test iterator</string>
     <string name="testMediator">test mediator</string>
+    <string name="testMemento">test memento</string>
 
 </resources>

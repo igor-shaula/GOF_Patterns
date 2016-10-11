@@ -9,6 +9,7 @@ import igor.shaula.gof_patterns.entry_points.GofCommand;
 import igor.shaula.gof_patterns.entry_points.GofInterpreter;
 import igor.shaula.gof_patterns.entry_points.GofIterator;
 import igor.shaula.gof_patterns.entry_points.GofMediator;
+import igor.shaula.gof_patterns.entry_points.GofMemento;
 import igor.shaula.gof_patterns.gof_behavioral.observer.EntryObserver;
 import igor.shaula.gof_patterns.utils.PSF;
 
@@ -47,7 +48,10 @@ public class MainActivity extends AppCompatActivity implements
             case PSF.MEDIATOR:
                 new GofMediator(this).doTheJob(value);
                 break;
-        }
+            case PSF.MEMENTO:
+                new GofMemento(this).doTheJob(value);
+                break;
+        } // end of switch-condition \\
     }
 
     @Override
