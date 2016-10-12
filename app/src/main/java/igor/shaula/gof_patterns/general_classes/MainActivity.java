@@ -10,7 +10,8 @@ import igor.shaula.gof_patterns.entry_points.GofInterpreter;
 import igor.shaula.gof_patterns.entry_points.GofIterator;
 import igor.shaula.gof_patterns.entry_points.GofMediator;
 import igor.shaula.gof_patterns.entry_points.GofMemento;
-import igor.shaula.gof_patterns.gof_behavioral.observer.EntryObserver;
+import igor.shaula.gof_patterns.entry_points.GofObserver;
+import igor.shaula.gof_patterns.entry_points.GofState;
 import igor.shaula.gof_patterns.utils.PSF;
 
 public class MainActivity extends AppCompatActivity implements
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements
     public void obtainFromViewAgent(String pattern, int value) {
         switch (pattern) {
             case PSF.OBSERVER:
-                new EntryObserver(this).doTheJob(value);
+                new GofObserver(this).doTheJob(value);
                 break;
             case PSF.CHAIN_OF_RESPONSIBILITY:
                 new GofChainOfResponsibility(this).doTheJob(value);
@@ -50,6 +51,9 @@ public class MainActivity extends AppCompatActivity implements
                 break;
             case PSF.MEMENTO:
                 new GofMemento(this).doTheJob(value);
+                break;
+            case PSF.STATE:
+                new GofState(this).doTheJob(value);
                 break;
         } // end of switch-condition \\
     }

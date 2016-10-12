@@ -1,6 +1,8 @@
-package igor.shaula.gof_patterns.gof_behavioral.observer;
+package igor.shaula.gof_patterns.entry_points;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
+import igor.shaula.gof_patterns.gof_behavioral.observer.ObservableObject;
+import igor.shaula.gof_patterns.gof_behavioral.observer.ObserverObject;
 
 /**
  * Define a one-to-many dependency between objects where a state change in one object
@@ -8,11 +10,11 @@ import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
  *
  * @author igor shaula \
  */
-public class EntryObserver {
+public class Z_GofObserver {
 
     private ObservableObject observableObject;
 
-    public EntryObserver(AnswerFromPattern answerFromPattern) {
+    public Z_GofObserver(AnswerFromPattern answerFromPattern) {
 
         observableObject = new ObservableObject();
 

@@ -11,5 +11,6 @@
     <string name="testIterator">test iterator</string>
     <string name="testMediator">test mediator</string>
     <string name="testMemento">test memento</string>
+    <string name="testState">test state</string>
 
 </resources>

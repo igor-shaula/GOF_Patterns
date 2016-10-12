@@ -67,6 +67,11 @@
                 style="@style/MatchWrap"
                 android:text="@string/testMemento" />
 
+            <Button
+                android:id="@+id/bTestState"
+                style="@style/MatchWrap"
+                android:text="@string/testState" />
+
         </LinearLayout>
 
     </ScrollView>
