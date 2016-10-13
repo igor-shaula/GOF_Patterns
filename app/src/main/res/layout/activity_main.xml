@@ -72,6 +72,11 @@
                 style="@style/MatchWrap"
                 android:text="@string/testState" />
 
+            <Button
+                android:id="@+id/bTestStrategy"
+                style="@style/MatchWrap"
+                android:text="@string/testStrategy" />
+
         </LinearLayout>
 
     </ScrollView>

@@ -40,7 +40,7 @@ public class GofInterpreter {
         Expression isAndroidDev = getAndroidExpression();
         Expression isJavaDev = getJavaExpression();
 
-        answerFromPattern.onJobDone("Developer is recognized:" + "\n"
+        answerFromPattern.onJobDone("StateDeveloper is recognized:" + "\n"
                 + "AndroidDev = " + isAndroidDev.interpret(data) + "\n"
                 + "JavaDev = " + isJavaDev.interpret(data));
     }

@@ -12,5 +12,6 @@
     <string name="testMediator">test mediator</string>
     <string name="testMemento">test memento</string>
     <string name="testState">test state</string>
+    <string name="testStrategy">test strategy</string>
 
 </resources>

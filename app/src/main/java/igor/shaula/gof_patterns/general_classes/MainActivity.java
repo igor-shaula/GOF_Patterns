@@ -12,6 +12,7 @@ import igor.shaula.gof_patterns.entry_points.GofMediator;
 import igor.shaula.gof_patterns.entry_points.GofMemento;
 import igor.shaula.gof_patterns.entry_points.GofObserver;
 import igor.shaula.gof_patterns.entry_points.GofState;
+import igor.shaula.gof_patterns.entry_points.GofStrategy;
 import igor.shaula.gof_patterns.utils.PSF;
 
 public class MainActivity extends AppCompatActivity implements
@@ -54,6 +55,9 @@ public class MainActivity extends AppCompatActivity implements
                 break;
             case PSF.STATE:
                 new GofState(this).doTheJob(value);
+                break;
+            case PSF.STRATEGY:
+                new GofStrategy(this).doTheJob(value);
                 break;
         } // end of switch-condition \\
     }

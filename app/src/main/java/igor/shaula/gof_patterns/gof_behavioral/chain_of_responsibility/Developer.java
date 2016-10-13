@@ -9,9 +9,9 @@ import igor.shaula.gof_patterns.utils.L;
  */
 public abstract class Developer {
 
-    private static final String CN = "Developer ` ";
+    private static final String CN = "StateDeveloper ` ";
 
-    // unit of experience - is usually multiplied in concrete Developer realizations \
+    // unit of experience - is usually multiplied in concrete StateDeveloper realizations \
     protected static final int ONE_MONTH = 1;
 
     // can be junior, middle, senior \

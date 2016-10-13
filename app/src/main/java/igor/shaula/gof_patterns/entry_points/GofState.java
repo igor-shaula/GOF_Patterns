@@ -1,9 +1,9 @@
 package igor.shaula.gof_patterns.entry_points;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
-import igor.shaula.gof_patterns.gof_behavioral.state.Action;
 import igor.shaula.gof_patterns.gof_behavioral.state.ActionSleeping;
-import igor.shaula.gof_patterns.gof_behavioral.state.Developer;
+import igor.shaula.gof_patterns.gof_behavioral.state.StateAction;
+import igor.shaula.gof_patterns.gof_behavioral.state.StateDeveloper;
 
 /**
  * Allow an object to alter its behavior when its internal state changes.
@@ -22,18 +22,18 @@ public class GofState {
     // called from activity \
     public void doTheJob(int valueIn) {
 
-        Action action = new ActionSleeping();
+        StateAction stateAction = new ActionSleeping();
 
-        Developer developer = new Developer();
+        StateDeveloper stateDeveloper = new StateDeveloper();
 
-        developer.setAction(action);
+        stateDeveloper.setStateAction(stateAction);
 
         if (valueIn < 1) {
             answerFromPattern.onJobDone("enter value greater than 1");
         }
         for (int i = 0; i < valueIn; i++) {
-            developer.doAction();
-            developer.changeAction();
+            stateDeveloper.doAction();
+            stateDeveloper.changeAction();
         }
     }
 }

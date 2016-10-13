@@ -18,6 +18,7 @@ public class PSF {
     public static final String MEDIATOR = "Mediator";
     public static final String MEMENTO = "Memento";
     public static final String STATE = "State";
+    public static final String STRATEGY = "Strategy";
 }
 /*
 // SOME EXPLANATION ================================================================================
