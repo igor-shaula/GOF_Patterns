@@ -19,6 +19,7 @@ public class PSF {
     public static final String MEMENTO = "Memento";
     public static final String STATE = "State";
     public static final String STRATEGY = "Strategy";
+    public static final String TEMPLATE_METHOD = "TemplateMethod";
 }
 /*
 // SOME EXPLANATION ================================================================================

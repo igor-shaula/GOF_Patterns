@@ -13,6 +13,7 @@ import igor.shaula.gof_patterns.entry_points.GofMemento;
 import igor.shaula.gof_patterns.entry_points.GofObserver;
 import igor.shaula.gof_patterns.entry_points.GofState;
 import igor.shaula.gof_patterns.entry_points.GofStrategy;
+import igor.shaula.gof_patterns.entry_points.GofTemplateMethod;
 import igor.shaula.gof_patterns.utils.PSF;
 
 public class MainActivity extends AppCompatActivity implements
@@ -59,8 +60,11 @@ public class MainActivity extends AppCompatActivity implements
             case PSF.STRATEGY:
                 new GofStrategy(this).doTheJob(value);
                 break;
+            case PSF.TEMPLATE_METHOD:
+                new GofTemplateMethod(this).doTheJob(value);
+                break;
         } // end of switch-condition \\
-    }
+    } // end of obtainFromViewAgent-method \\
 
     @Override
     public void onJobDone(String result) {
