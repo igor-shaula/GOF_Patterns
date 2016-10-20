@@ -14,5 +14,6 @@
     <string name="testState">test state</string>
     <string name="testStrategy">test strategy</string>
     <string name="testTemplateMethod">test template method</string>
+    <string name="testVisitor">test visitor</string>
 
 </resources>

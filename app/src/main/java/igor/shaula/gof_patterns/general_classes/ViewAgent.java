@@ -62,6 +62,9 @@ public class ViewAgent implements View.OnClickListener {
 
         Button bTestTemplateMethod = (Button) rootView.findViewById(R.id.bTestTemplateMethod);
         bTestTemplateMethod.setOnClickListener(this);
+
+        Button bTestVisitor = (Button) rootView.findViewById(R.id.bTestVisitor);
+        bTestVisitor.setOnClickListener(this);
     }
 
     @Override
@@ -99,6 +102,9 @@ public class ViewAgent implements View.OnClickListener {
                 break;
             case R.id.bTestTemplateMethod:
                 pattern = PSF.TEMPLATE_METHOD;
+                break;
+            case R.id.bTestVisitor:
+                pattern = PSF.VISITOR;
                 break;
         }
 
