@@ -1,15 +1,28 @@
 package igor.shaula.gof_patterns.gof_creational.builder_abstract;
 
 /**
+ * top-level abstract builder of the product \
+ *
  * @author igor shaula \
  */
-public interface AbsProjectBuilder {
+public abstract class AbsProjectBuilder {
 
-    AbsProjectBuilder setDesigner(String name);
+    // pay attention to modifier - it's protected \
+    protected Project project;
 
-    AbsProjectBuilder setDeveloper(String name);
+    public Project getProject() {
+        return project;
+    }
 
-    AbsProjectBuilder setTester(String name);
+    public void createProject() {
+        project = new Project();
+    }
 
-    AbsProjectBuilder setManager(String name);
+    abstract AbsProjectBuilder setDesigner();
+
+    abstract AbsProjectBuilder setDeveloper();
+
+    abstract AbsProjectBuilder setTester();
+
+    abstract AbsProjectBuilder setManager();
 }

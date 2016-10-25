@@ -15,6 +15,7 @@ import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofState;
 import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofStrategy;
 import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofTemplateMethod;
 import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofVisitor;
+import igor.shaula.gof_patterns.entry_points.gof_creational.GofBuilderAbstract;
 import igor.shaula.gof_patterns.entry_points.gof_creational.GofBuilderSimple;
 import igor.shaula.gof_patterns.utils.PSF;
 
@@ -34,10 +35,9 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public void obtainFromViewAgent(String pattern, int value) {
+
         switch (pattern) {
-            case PSF.OBSERVER:
-                new GofObserver(this).doTheJob(value);
-                break;
+
             case PSF.CHAIN_OF_RESPONSIBILITY:
                 new GofChainOfResponsibility(this).doTheJob(value);
                 break;
@@ -56,6 +56,9 @@ public class MainActivity extends AppCompatActivity implements
             case PSF.MEMENTO:
                 new GofMemento(this).doTheJob(value);
                 break;
+            case PSF.OBSERVER:
+                new GofObserver(this).doTheJob(value);
+                break;
             case PSF.STATE:
                 new GofState(this).doTheJob(value);
                 break;
@@ -70,6 +73,9 @@ public class MainActivity extends AppCompatActivity implements
                 break;
             case PSF.BUILDER_SIMPLE:
                 new GofBuilderSimple(this).doTheJob(value);
+                break;
+            case PSF.BUILDER_ABSTRACT:
+                new GofBuilderAbstract(this).doTheJob(value);
                 break;
         } // end of switch-condition \\
     } // end of obtainFromViewAgent-method \\

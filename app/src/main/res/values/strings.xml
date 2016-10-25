@@ -1,20 +1,22 @@
 <resources>
 
-    <string name="app_name">GOF_Patterns</string>
+    <string name="app_name">Design Patterns</string>
 
-    <string name="testObserver">test Observer</string>
     <string name="set_new_value">set new value</string>
     <string name="this_text_will_change">this text will change</string>
+
     <string name="testChainOfResponsibility">test Chain Of Responsibility</string>
-    <string name="testCommand">test command</string>
-    <string name="testInterpreter">test interpreter</string>
-    <string name="testIterator">test iterator</string>
-    <string name="testMediator">test mediator</string>
-    <string name="testMemento">test memento</string>
-    <string name="testState">test state</string>
-    <string name="testStrategy">test strategy</string>
-    <string name="testTemplateMethod">test template method</string>
-    <string name="testVisitor">test visitor</string>
-    <string name="testBuilderSimple">test builder simple</string>
+    <string name="testCommand">test Command</string>
+    <string name="testInterpreter">test Interpreter</string>
+    <string name="testIterator">test Iterator</string>
+    <string name="testMediator">test Mediator</string>
+    <string name="testMemento">test Memento</string>
+    <string name="testObserver">test Observer</string>
+    <string name="testState">test State</string>
+    <string name="testStrategy">test Strategy</string>
+    <string name="testTemplateMethod">test Template Method</string>
+    <string name="testVisitor">test Visitor</string>
+    <string name="testBuilderSimple">test Builder - simple</string>
+    <string name="testBuilderAbstract">test Builder abstract</string>
 
 </resources>

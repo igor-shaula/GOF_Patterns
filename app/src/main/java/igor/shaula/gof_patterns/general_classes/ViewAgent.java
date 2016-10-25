@@ -33,9 +33,6 @@ public class ViewAgent implements View.OnClickListener {
         tvResult = (TextView) rootView.findViewById(R.id.tvResult);
         etNewData = (EditText) rootView.findViewById(R.id.etNewData);
 
-        Button bTestObserver = (Button) rootView.findViewById(R.id.bTestObserver);
-        bTestObserver.setOnClickListener(this);
-
         Button bTestChainOfResponsibility = (Button) rootView.findViewById(R.id.bTestChainOfResponsibility);
         bTestChainOfResponsibility.setOnClickListener(this);
 
@@ -54,6 +51,9 @@ public class ViewAgent implements View.OnClickListener {
         Button bTestMemento = (Button) rootView.findViewById(R.id.bTestMemento);
         bTestMemento.setOnClickListener(this);
 
+        Button bTestObserver = (Button) rootView.findViewById(R.id.bTestObserver);
+        bTestObserver.setOnClickListener(this);
+
         Button bTestState = (Button) rootView.findViewById(R.id.bTestState);
         bTestState.setOnClickListener(this);
 
@@ -68,7 +68,11 @@ public class ViewAgent implements View.OnClickListener {
 
         Button bTestBuilderSimple = (Button) rootView.findViewById(R.id.bTestBuilderSimple);
         bTestBuilderSimple.setOnClickListener(this);
-    }
+
+        Button bTestBuilderAbstract = (Button) rootView.findViewById(R.id.bTestBuilderAbstract);
+        bTestBuilderAbstract.setOnClickListener(this);
+
+    } // end of ViewAgent-constructor \\
 
     @Override
     public void onClick(View v) {
@@ -76,9 +80,7 @@ public class ViewAgent implements View.OnClickListener {
         String pattern = null;
 
         switch (v.getId()) {
-            case R.id.bTestObserver:
-                pattern = PSF.OBSERVER;
-                break;
+
             case R.id.bTestChainOfResponsibility:
                 pattern = PSF.CHAIN_OF_RESPONSIBILITY;
                 break;
@@ -97,6 +99,9 @@ public class ViewAgent implements View.OnClickListener {
             case R.id.bTestMemento:
                 pattern = PSF.MEMENTO;
                 break;
+            case R.id.bTestObserver:
+                pattern = PSF.OBSERVER;
+                break;
             case R.id.bTestState:
                 pattern = PSF.STATE;
                 break;
@@ -111,6 +116,9 @@ public class ViewAgent implements View.OnClickListener {
                 break;
             case R.id.bTestBuilderSimple:
                 pattern = PSF.BUILDER_SIMPLE;
+                break;
+            case R.id.bTestBuilderAbstract:
+                pattern = PSF.BUILDER_ABSTRACT;
                 break;
         }
 

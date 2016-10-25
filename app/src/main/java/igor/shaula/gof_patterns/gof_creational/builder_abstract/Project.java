@@ -1,6 +1,8 @@
 package igor.shaula.gof_patterns.gof_creational.builder_abstract;
 
 /**
+ * this is a product - what is made with a concrete builder \
+ *
  * @author igor shaula \
  */
 public class Project {
@@ -10,48 +12,22 @@ public class Project {
     private String testerName;
     private String managerName;
 
-    public static class ProjectBuilder implements AbsProjectBuilder {
+    // all setters made of package-local accessibility \
 
-        private String designerName;
-        private String developerName;
-        private String testerName;
-        private String managerName;
+    void setDesignerName(String designerName) {
+        this.designerName = designerName;
+    }
 
-        @Override
-        public ProjectBuilder setDesigner(String name) {
-            designerName = name;
-            return this;
-        }
+    void setDeveloperName(String developerName) {
+        this.developerName = developerName;
+    }
 
-        @Override
-        public ProjectBuilder setDeveloper(String name) {
-            developerName = name;
-            return this;
-        }
+    void setTesterName(String testerName) {
+        this.testerName = testerName;
+    }
 
-        @Override
-        public ProjectBuilder setTester(String name) {
-            testerName = name;
-            return this;
-        }
-
-        @Override
-        public ProjectBuilder setManager(String name) {
-            managerName = name;
-            return this;
-        }
-
-        public Project build() {
-            return new Project(this);
-        }
-
-    } // end of inner-static-Builder-class \\
-
-    private Project(ProjectBuilder projectBuilder) {
-        designerName = projectBuilder.designerName;
-        developerName = projectBuilder.developerName;
-        testerName = projectBuilder.testerName;
-        managerName = projectBuilder.managerName;
+    void setManagerName(String managerName) {
+        this.managerName = managerName;
     }
 
     public String getDesignerName() {

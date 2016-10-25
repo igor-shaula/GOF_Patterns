@@ -33,11 +33,6 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/bTestObserver"
-                style="@style/MatchWrap"
-                android:text="@string/testObserver" />
-
-            <Button
                 android:id="@+id/bTestChainOfResponsibility"
                 style="@style/MatchWrap"
                 android:text="@string/testChainOfResponsibility" />
@@ -68,6 +63,11 @@
                 android:text="@string/testMemento" />
 
             <Button
+                android:id="@+id/bTestObserver"
+                style="@style/MatchWrap"
+                android:text="@string/testObserver" />
+
+            <Button
                 android:id="@+id/bTestState"
                 style="@style/MatchWrap"
                 android:text="@string/testState" />
@@ -91,6 +91,11 @@
                 android:id="@+id/bTestBuilderSimple"
                 style="@style/MatchWrap"
                 android:text="@string/testBuilderSimple" />
+
+            <Button
+                android:id="@+id/bTestBuilderAbstract"
+                style="@style/MatchWrap"
+                android:text="@string/testBuilderAbstract" />
 
         </LinearLayout>
 
