@@ -21,6 +21,8 @@ public class PSF {
     public static final String STRATEGY = "Strategy";
     public static final String TEMPLATE_METHOD = "TemplateMethod";
     public static final String VISITOR = "Visitor";
+
+    public static final String BUILDER_SIMPLE = "Builder - simple version";
 }
 /*
 // SOME EXPLANATION ================================================================================

@@ -1,4 +1,4 @@
-package igor.shaula.gof_patterns.entry_points;
+package igor.shaula.gof_patterns.entry_points.gof_behavioral;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
 import igor.shaula.gof_patterns.gof_behavioral.chain_of_responsibility.JuniorDeveloper;

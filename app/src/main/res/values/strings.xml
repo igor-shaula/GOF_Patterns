@@ -15,5 +15,6 @@
     <string name="testStrategy">test strategy</string>
     <string name="testTemplateMethod">test template method</string>
     <string name="testVisitor">test visitor</string>
+    <string name="testBuilderSimple">test builder simple</string>
 
 </resources>

@@ -4,17 +4,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import igor.shaula.gof_patterns.R;
-import igor.shaula.gof_patterns.entry_points.GofChainOfResponsibility;
-import igor.shaula.gof_patterns.entry_points.GofCommand;
-import igor.shaula.gof_patterns.entry_points.GofInterpreter;
-import igor.shaula.gof_patterns.entry_points.GofIterator;
-import igor.shaula.gof_patterns.entry_points.GofMediator;
-import igor.shaula.gof_patterns.entry_points.GofMemento;
-import igor.shaula.gof_patterns.entry_points.GofObserver;
-import igor.shaula.gof_patterns.entry_points.GofState;
-import igor.shaula.gof_patterns.entry_points.GofStrategy;
-import igor.shaula.gof_patterns.entry_points.GofTemplateMethod;
-import igor.shaula.gof_patterns.entry_points.GofVisitor;
+import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofChainOfResponsibility;
+import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofCommand;
+import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofInterpreter;
+import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofIterator;
+import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofMediator;
+import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofMemento;
+import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofObserver;
+import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofState;
+import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofStrategy;
+import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofTemplateMethod;
+import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofVisitor;
+import igor.shaula.gof_patterns.entry_points.gof_creational.GofBuilderSimple;
 import igor.shaula.gof_patterns.utils.PSF;
 
 public class MainActivity extends AppCompatActivity implements
@@ -66,6 +67,9 @@ public class MainActivity extends AppCompatActivity implements
                 break;
             case PSF.VISITOR:
                 new GofVisitor(this).doTheJob(value);
+                break;
+            case PSF.BUILDER_SIMPLE:
+                new GofBuilderSimple(this).doTheJob(value);
                 break;
         } // end of switch-condition \\
     } // end of obtainFromViewAgent-method \\
