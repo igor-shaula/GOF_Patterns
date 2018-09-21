@@ -1,6 +1,5 @@
 # Built application files
 *.apk
-*.ap_
 
 # Files for the Dalvik VM
 *.dex
@@ -37,6 +36,8 @@ captures/
 
 # additions from new created project
 *.iml
-/.idea/libraries
 .DS_Store
 /captures
+
+/gradlew
+/gradlew.bat
