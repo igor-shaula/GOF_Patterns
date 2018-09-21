@@ -1,4 +1,4 @@
-package igor.shaula.gof_patterns.gof_creational.builder_abstract;
+package com.igor_shaula.patterns_in_pure_java.gof_creational.builder_abstract;
 
 /**
  * top-level abstract builder of the product \
