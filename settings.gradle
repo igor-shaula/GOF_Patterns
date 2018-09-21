@@ -1,1 +1,1 @@
-include ':app', ':patterns_in_java'
+include ':app', ':patterns_core'
