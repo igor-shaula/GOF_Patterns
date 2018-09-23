@@ -13,22 +13,22 @@ import com.igor_shaula.patterns_in_pure_java.gof_behavioral.template_method.Team
  * @author igor shaula \
  */
 public class GofTemplateMethod {
-
+    
     private AnswerFromPattern answerFromPattern;
-
+    
     public GofTemplateMethod(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
-
+    
     // called from activity \
     public void doTheJob(int valueIn) {
-
+        
         EmployeeTemplate aDeveloper = new TeamDeveloper();
         EmployeeTemplate aTester = new TeamTester();
-
+        
         String result = aDeveloper.reportOnTask(valueIn)
                 + " & " + aTester.reportOnTask(valueIn);
-
+        
         answerFromPattern.onJobDone(result);
     }
 }

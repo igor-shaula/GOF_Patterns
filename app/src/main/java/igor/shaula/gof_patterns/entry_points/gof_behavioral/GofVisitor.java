@@ -16,22 +16,22 @@ import com.igor_shaula.patterns_in_pure_java.gof_behavioral.visitor.VisitorSenio
  * @author igor shaula \
  */
 public class GofVisitor implements Feedback {
-
+    
     private AnswerFromPattern answerFromPattern;
-
+    
     public GofVisitor(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
-
+    
     // called from activity \
     public void doTheJob(int valueIn) {
-
+        
         TaskVenue taskVenue = new TaskVenue();
-
+        
         VisitorDeveloper junior = new VisitorJunior(this);
         VisitorDeveloper middle = new VisitorMiddle(this);
         VisitorDeveloper senior = new VisitorSenior(this);
-
+        
         switch (valueIn % 2) {
             case 0:
                 taskVenue.workFor(junior);
@@ -44,10 +44,10 @@ public class GofVisitor implements Feedback {
                 break;
         }
     }
-
+    
     @Override
     public void sendResult(String result) {
-
+        
         answerFromPattern.onJobDone(result);
     }
 }

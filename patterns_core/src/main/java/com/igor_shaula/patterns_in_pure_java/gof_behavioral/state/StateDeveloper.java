@@ -4,13 +4,13 @@ package com.igor_shaula.patterns_in_pure_java.gof_behavioral.state;
  * @author igor shaula \
  */
 public class StateDeveloper {
-
+    
     private StateAction stateAction;
-
+    
     public void setStateAction(StateAction stateAction) {
         this.stateAction = stateAction;
     }
-
+    
     public void changeAction() {
         // all magic is done here - generally actions go in pairs \
         if (stateAction instanceof ActionSleeping) {
@@ -27,7 +27,7 @@ public class StateDeveloper {
             setStateAction(new ActionSleeping());
         }
     }
-
+    
     public void doAction() {
         stateAction.doAction();
     }

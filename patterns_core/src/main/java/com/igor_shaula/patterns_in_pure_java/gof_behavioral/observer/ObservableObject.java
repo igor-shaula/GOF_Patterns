@@ -10,32 +10,32 @@ import java.util.List;
  */
 @SuppressWarnings("WeakerAccess")
 public class ObservableObject implements MyObservable {
-
+    
     private List<MyObserver> myObserverList;
-
+    
     private int observableValue;
-
+    
     public ObservableObject() {
         myObserverList = new LinkedList<>();
     }
-
+    
     @Override
     public void registerObserver(MyObserver myObserver) {
         myObserverList.add(myObserver);
     }
-
+    
     @Override
     public void removeObserver(MyObserver myObserver) {
         myObserverList.remove(myObserver);
     }
-
+    
     @Override
     public void notifyObservers() {
         for (MyObserver myObserver : myObserverList) {
             myObserver.update(observableValue);
         }
     }
-
+    
     public void setObservableValue(int observableValue) {
         this.observableValue = observableValue;
         // actual observable job is done here - after every observableValue change \

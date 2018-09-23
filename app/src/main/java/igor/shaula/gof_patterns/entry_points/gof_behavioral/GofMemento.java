@@ -12,26 +12,26 @@ import com.igor_shaula.patterns_in_pure_java.gof_behavioral.memento.Originator;
 public class GofMemento {
 
 //    private static final String CN = "GofMemento ` ";
-
+    
     private AnswerFromPattern answerFromPattern;
-
+    
     public GofMemento(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
-
+    
     public void doTheJob(int value) {
-
+        
         // first given value will be saved and restored later \
-
+        
         Originator originator = new Originator();
-
+        
         originator.setCurrentState("first value = " + value);
         Originator.Memento memento = originator.saveStateToMemento();
-
+        
         originator.setCurrentState("new value = " + value);
-
+        
         originator.restoreStateFrom(memento);
-
+        
         answerFromPattern.onJobDone("restored from memento:\n" + originator.getCurrentState());
     }
 }

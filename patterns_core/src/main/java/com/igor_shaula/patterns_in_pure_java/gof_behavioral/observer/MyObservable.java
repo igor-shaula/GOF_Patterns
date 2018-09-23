@@ -7,11 +7,11 @@ package com.igor_shaula.patterns_in_pure_java.gof_behavioral.observer;
  */
 @SuppressWarnings("WeakerAccess")
 public interface MyObservable {
-
+    
     void registerObserver(MyObserver myObserver);
-
+    
     void removeObserver(MyObserver myObserver);
-
+    
     void notifyObservers();
 }
 

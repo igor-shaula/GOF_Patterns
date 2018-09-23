@@ -14,73 +14,74 @@ import igor.shaula.gof_patterns.utils.PSF;
  */
 @SuppressWarnings("WeakerAccess")
 public class ViewAgent implements View.OnClickListener {
-
+    
     private TextView tvResult;
-
+    
     private EditText etNewData;
-
+    
     private Caller mCaller;
-
+    
     // implemented by calling activity \
     public interface Caller {
+        
         void obtainFromViewAgent(String pattern, int value);
     }
-
+    
     public ViewAgent(Caller caller, View rootView) {
-
+        
         mCaller = caller;
-
+        
         tvResult = (TextView) rootView.findViewById(R.id.tvResult);
         etNewData = (EditText) rootView.findViewById(R.id.etNewData);
-
+        
         Button bTestChainOfResponsibility = (Button) rootView.findViewById(R.id.bTestChainOfResponsibility);
         bTestChainOfResponsibility.setOnClickListener(this);
-
+        
         Button bTestCommand = (Button) rootView.findViewById(R.id.bTestCommand);
         bTestCommand.setOnClickListener(this);
-
+        
         Button bTestInterpreter = (Button) rootView.findViewById(R.id.bTestInterpreter);
         bTestInterpreter.setOnClickListener(this);
-
+        
         Button bTestIterator = (Button) rootView.findViewById(R.id.bTestIterator);
         bTestIterator.setOnClickListener(this);
-
+        
         Button bTestMediator = (Button) rootView.findViewById(R.id.bTestMediator);
         bTestMediator.setOnClickListener(this);
-
+        
         Button bTestMemento = (Button) rootView.findViewById(R.id.bTestMemento);
         bTestMemento.setOnClickListener(this);
-
+        
         Button bTestObserver = (Button) rootView.findViewById(R.id.bTestObserver);
         bTestObserver.setOnClickListener(this);
-
+        
         Button bTestState = (Button) rootView.findViewById(R.id.bTestState);
         bTestState.setOnClickListener(this);
-
+        
         Button bTestStrategy = (Button) rootView.findViewById(R.id.bTestStrategy);
         bTestStrategy.setOnClickListener(this);
-
+        
         Button bTestTemplateMethod = (Button) rootView.findViewById(R.id.bTestTemplateMethod);
         bTestTemplateMethod.setOnClickListener(this);
-
+        
         Button bTestVisitor = (Button) rootView.findViewById(R.id.bTestVisitor);
         bTestVisitor.setOnClickListener(this);
-
+        
         Button bTestBuilderSimple = (Button) rootView.findViewById(R.id.bTestBuilderSimple);
         bTestBuilderSimple.setOnClickListener(this);
-
+        
         Button bTestBuilderAbstract = (Button) rootView.findViewById(R.id.bTestBuilderAbstract);
         bTestBuilderAbstract.setOnClickListener(this);
-
+        
     } // end of ViewAgent-constructor \\
-
+    
     @Override
     public void onClick(View v) {
-
+        
         String pattern = null;
-
+        
         switch (v.getId()) {
-
+            
             case R.id.bTestChainOfResponsibility:
                 pattern = PSF.CHAIN_OF_RESPONSIBILITY;
                 break;
@@ -121,9 +122,9 @@ public class ViewAgent implements View.OnClickListener {
                 pattern = PSF.BUILDER_ABSTRACT;
                 break;
         }
-
+        
         Editable newData = etNewData.getText();
-
+        
         int value = 0;
         try {
             value = Integer.valueOf(String.valueOf(newData));
@@ -136,9 +137,9 @@ public class ViewAgent implements View.OnClickListener {
             }
         }
         mCaller.obtainFromViewAgent(pattern, value);
-
+        
     } // end of onClick-method \\
-
+    
     public void updateText(CharSequence newText) {
         tvResult.setText(newText);
     }

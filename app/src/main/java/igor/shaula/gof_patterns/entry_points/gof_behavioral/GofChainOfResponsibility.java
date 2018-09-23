@@ -14,25 +14,25 @@ import com.igor_shaula.patterns_in_pure_java.gof_behavioral.chain_of_responsibil
  * @author igor shaula \
  */
 public class GofChainOfResponsibility {
-
+    
     private AnswerFromPattern answerFromPattern;
-
+    
     public GofChainOfResponsibility(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
-
+    
     public void doTheJob(int value) {
-
+        
         JuniorDeveloper juniorDeveloper = new JuniorDeveloper();
         MiddleDeveloper middleDeveloper = new MiddleDeveloper();
         SeniorDeveloper seniorDeveloper = new SeniorDeveloper();
-
+        
         juniorDeveloper.setNext(middleDeveloper);
         middleDeveloper.setNext(seniorDeveloper);
-
+        
         Requirement requirement = new Requirement(value);
         int stepsOfRecursion = juniorDeveloper.findExecutorFor(requirement, 0);
-
+        
         String result;
         switch (stepsOfRecursion) {
             case 1:

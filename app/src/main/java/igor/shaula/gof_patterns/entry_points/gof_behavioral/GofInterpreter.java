@@ -13,18 +13,18 @@ import com.igor_shaula.patterns_in_pure_java.gof_behavioral.interpreter.OrExpres
  * @author igor shaula \
  */
 public class GofInterpreter {
-
+    
     private static final String S_ANDROID = "Android";
     private static final String S_JAVA = "Java";
-
+    
     private AnswerFromPattern answerFromPattern;
-
+    
     public GofInterpreter(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
-
+    
     public void doTheJob(int value) {
-
+        
         // preparing data for translation \
         String data = "candidate knows: ";
         switch (value) {
@@ -36,28 +36,28 @@ public class GofInterpreter {
                 break;
         }
         System.out.println("data = " + data);
-
+        
         Expression isAndroidDev = getAndroidExpression();
         Expression isJavaDev = getJavaExpression();
-
+        
         answerFromPattern.onJobDone("StateDeveloper is recognized:" + "\n"
                 + "AndroidDev = " + isAndroidDev.interpret(data) + "\n"
                 + "JavaDev = " + isJavaDev.interpret(data));
     }
-
+    
     private Expression getAndroidExpression() {
-
+        
         Expression androidDev = new DataExpression(S_ANDROID);
         Expression javaDev = new DataExpression(S_JAVA);
-
+        
         return new AndExpression(androidDev, javaDev);
     }
-
+    
     private Expression getJavaExpression() {
-
+        
         Expression androidDev = new DataExpression(S_ANDROID);
         Expression javaDev = new DataExpression(S_JAVA);
-
+        
         return new OrExpression(androidDev, javaDev);
     }
 }

@@ -16,20 +16,20 @@ import com.igor_shaula.patterns_in_pure_java.gof_behavioral.strategy.StrategyDev
  * @author igor shaula \
  */
 public class GofStrategy {
-
+    
     private AnswerFromPattern answerFromPattern;
-
+    
     public GofStrategy(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
-
+    
     // called from activity \
     public void doTheJob(int valueIn) {
-
+        
         StrategyDeveloper strategyDeveloper = new StrategyDeveloper();
-
+        
         switch (valueIn % 6) {
-
+            
             case 0:
                 strategyDeveloper.setStrategyAction(new ActionSleeping());
                 break;
@@ -50,7 +50,7 @@ public class GofStrategy {
                 break;
         }
         strategyDeveloper.executeAction();
-
+        
         answerFromPattern.onJobDone("strategy selected and temporarily shown in log");
     }
 }

@@ -9,7 +9,7 @@ package igor.shaula.gof_patterns.utils;
  * @author igor.shaula \
  */
 public class PSF {
-
+    
     public static final String CHAIN_OF_RESPONSIBILITY = "GofChainOfResponsibility";
     public static final String COMMAND = "GofCommand";
     public static final String INTERPRETER = "Interpreter";
@@ -21,7 +21,7 @@ public class PSF {
     public static final String STRATEGY = "Strategy";
     public static final String TEMPLATE_METHOD = "TemplateMethod";
     public static final String VISITOR = "Visitor";
-
+    
     public static final String BUILDER_SIMPLE = "Builder - simple version";
     public static final String BUILDER_ABSTRACT = "Builder - version with abstract class";
 }

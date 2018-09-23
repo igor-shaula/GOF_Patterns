@@ -11,20 +11,20 @@ import com.igor_shaula.patterns_in_pure_java.gof_behavioral.iterator.Iterator;
  * @author igor shaula \
  */
 public class GofIterator {
-
+    
     private AnswerFromPattern answerFromPattern;
-
+    
     public GofIterator(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
-
+    
     public void doTheJob(int value) {
-
+        
         Container container = new Container();
-
+        
         Iterator iterator = container.getIterator();
         iterator.setPosition(value);
-
+        
         String result = "";
         while (iterator.hasNext()) {
             result = result.concat(iterator.getNext() + "\n");

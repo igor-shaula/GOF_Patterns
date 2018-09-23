@@ -12,22 +12,22 @@ import com.igor_shaula.patterns_in_pure_java.gof_behavioral.state.StateDeveloper
  * @author igor shaula \
  */
 public class GofState {
-
+    
     private AnswerFromPattern answerFromPattern;
-
+    
     public GofState(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
-
+    
     // called from activity \
     public void doTheJob(int valueIn) {
-
+        
         StateAction stateAction = new ActionSleeping();
-
+        
         StateDeveloper stateDeveloper = new StateDeveloper();
-
+        
         stateDeveloper.setStateAction(stateAction);
-
+        
         if (valueIn < 1) {
             answerFromPattern.onJobDone("enter value greater than 1");
         }

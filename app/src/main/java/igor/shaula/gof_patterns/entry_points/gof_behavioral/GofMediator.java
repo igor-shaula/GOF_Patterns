@@ -12,27 +12,27 @@ import com.igor_shaula.patterns_in_pure_java.gof_behavioral.mediator.User;
  * @author igor shaula \
  */
 public class GofMediator {
-
+    
     private AnswerFromPattern answerFromPattern;
-
+    
     public GofMediator(AnswerFromPattern answerFromPattern) {
         this.answerFromPattern = answerFromPattern;
     }
-
+    
     public void doTheJob(int value) {
-
+        
         ChatRealization chatRealization = new ChatRealization();
-
+        
         User junior = new User(chatRealization, "Junior");
         User middle = new User(chatRealization, "Middle");
         User senior = new User(chatRealization, "Senior");
         User teamlead = new User(chatRealization, "TeamLead");
-
+        
         chatRealization.setAdmin(teamlead);
         chatRealization.addUser(junior);
         chatRealization.addUser(middle);
         chatRealization.addUser(senior);
-
+        
         String response;
         switch (value % 4) {
             case 1:

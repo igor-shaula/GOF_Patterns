@@ -1,13 +1,12 @@
 package igor.shaula.gof_patterns.entry_points.gof_creational;
 
+import com.igor_shaula.patterns_in_pure_java.AnswerFromPattern;
 import com.igor_shaula.patterns_in_pure_java.gof_creational.builder_abstract.AbsProjectBuilder;
 import com.igor_shaula.patterns_in_pure_java.gof_creational.builder_abstract.Director;
 import com.igor_shaula.patterns_in_pure_java.gof_creational.builder_abstract.FirstProjectBuilder;
 import com.igor_shaula.patterns_in_pure_java.gof_creational.builder_abstract.Project;
 import com.igor_shaula.patterns_in_pure_java.gof_creational.builder_abstract.SecondProjectBuilder;
 import com.igor_shaula.patterns_in_pure_java.gof_creational.builder_abstract.ZeroProjectBuilder;
-
-import com.igor_shaula.patterns_in_pure_java.AnswerFromPattern;
 
 /**
  * Define the skeleton of an algorithm in an operation, deferring some steps to subclasses.
