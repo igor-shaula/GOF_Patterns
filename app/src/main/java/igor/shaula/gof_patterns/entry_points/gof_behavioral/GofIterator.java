@@ -1,8 +1,8 @@
 package igor.shaula.gof_patterns.entry_points.gof_behavioral;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
-import igor.shaula.gof_patterns.gof_behavioral.iterator.Container;
-import igor.shaula.gof_patterns.gof_behavioral.iterator.Iterator;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.iterator.Container;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.iterator.Iterator;
 
 /**
  * Provide a way to access the elements of an aggregate object sequentially
