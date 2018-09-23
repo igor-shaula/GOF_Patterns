@@ -1,9 +1,9 @@
-package igor.shaula.gof_patterns.gof_behavioral.visitor;
+package com.igor_shaula.patterns_in_pure_java.gof_behavioral.visitor;
 
 /**
  * @author igor shaula \
  */
-public class TaskTest implements TaskForVisitor {
+public class TaskCode implements TaskForVisitor {
     @Override
     public void workFor(VisitorDeveloper visitorDeveloper) {
         visitorDeveloper.workWith(this);

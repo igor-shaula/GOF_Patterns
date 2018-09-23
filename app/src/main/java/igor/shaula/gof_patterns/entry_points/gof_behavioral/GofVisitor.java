@@ -1,12 +1,12 @@
 package igor.shaula.gof_patterns.entry_points.gof_behavioral;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
-import igor.shaula.gof_patterns.gof_behavioral.visitor.Feedback;
-import igor.shaula.gof_patterns.gof_behavioral.visitor.TaskVenue;
-import igor.shaula.gof_patterns.gof_behavioral.visitor.VisitorDeveloper;
-import igor.shaula.gof_patterns.gof_behavioral.visitor.VisitorJunior;
-import igor.shaula.gof_patterns.gof_behavioral.visitor.VisitorMiddle;
-import igor.shaula.gof_patterns.gof_behavioral.visitor.VisitorSenior;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.visitor.Feedback;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.visitor.TaskVenue;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.visitor.VisitorDeveloper;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.visitor.VisitorJunior;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.visitor.VisitorMiddle;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.visitor.VisitorSenior;
 
 /**
  * Define the skeleton of an algorithm in an operation, deferring some steps to subclasses.
