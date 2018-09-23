@@ -1,6 +1,6 @@
 package igor.shaula.gof_patterns.entry_points.gof_behavioral;
 
-import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
+import com.igor_shaula.patterns_in_pure_java.AnswerFromPattern;
 import com.igor_shaula.patterns_in_pure_java.gof_behavioral.state.ActionSleeping;
 import com.igor_shaula.patterns_in_pure_java.gof_behavioral.state.StateAction;
 import com.igor_shaula.patterns_in_pure_java.gof_behavioral.state.StateDeveloper;

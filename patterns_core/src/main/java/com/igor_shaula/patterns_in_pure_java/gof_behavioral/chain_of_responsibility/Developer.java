@@ -1,7 +1,5 @@
 package com.igor_shaula.patterns_in_pure_java.gof_behavioral.chain_of_responsibility;
 
-import igor.shaula.gof_patterns.utils.L;
-
 /**
  * contains logic for this pattern \
  *
@@ -30,13 +28,13 @@ public abstract class Developer {
 
     public int findExecutorFor(Requirement requirement, int stepsOfRecursion) {
         stepsOfRecursion++;
-        L.l(CN + "stepsOfRecursion = " + stepsOfRecursion);
+//        L.l(CN + "stepsOfRecursion = " + stepsOfRecursion);
         if (requirement.getLevel() < this.getExperience()) {
-            L.l(CN + "this " + getRole() + " will do the job for " + requirement.getLevel());
+//            L.l(CN + "this " + getRole() + " will do the job for " + requirement.getLevel());
         } else if (otherDeveloper != null) {
             stepsOfRecursion = otherDeveloper.findExecutorFor(requirement, stepsOfRecursion);
         } else {
-            L.l(CN + "no more developers!");
+//            L.l(CN + "no more developers!");
         }
         return stepsOfRecursion;
     }

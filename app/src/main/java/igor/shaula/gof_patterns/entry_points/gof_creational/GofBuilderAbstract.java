@@ -7,7 +7,7 @@ import com.igor_shaula.patterns_in_pure_java.gof_creational.builder_abstract.Pro
 import com.igor_shaula.patterns_in_pure_java.gof_creational.builder_abstract.SecondProjectBuilder;
 import com.igor_shaula.patterns_in_pure_java.gof_creational.builder_abstract.ZeroProjectBuilder;
 
-import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
+import com.igor_shaula.patterns_in_pure_java.AnswerFromPattern;
 
 /**
  * Define the skeleton of an algorithm in an operation, deferring some steps to subclasses.

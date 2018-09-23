@@ -1,6 +1,6 @@
 package com.igor_shaula.patterns_in_pure_java.gof_behavioral.observer;
 
-import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
+import com.igor_shaula.patterns_in_pure_java.AnswerFromPattern;
 
 /**
  * kind of a listener for ObservableObject \

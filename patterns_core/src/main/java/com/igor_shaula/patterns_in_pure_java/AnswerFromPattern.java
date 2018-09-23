@@ -1,4 +1,4 @@
-package igor.shaula.gof_patterns.general_classes;
+package com.igor_shaula.patterns_in_pure_java;
 
 /**
  * unified way of callback for every pattern - it avoids creation of an interface in every EntryPoint \

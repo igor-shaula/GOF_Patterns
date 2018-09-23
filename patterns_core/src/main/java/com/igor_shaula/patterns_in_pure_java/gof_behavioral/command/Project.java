@@ -1,7 +1,6 @@
 package com.igor_shaula.patterns_in_pure_java.gof_behavioral.command;
 
-import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
-import igor.shaula.gof_patterns.utils.L;
+import com.igor_shaula.patterns_in_pure_java.AnswerFromPattern;
 
 /**
  * receiver class \
@@ -23,30 +22,30 @@ public class Project {
     // job for sales-manager \
     public void findClient() {
         answerFromPattern.onJobDone("time to found client = " + (value * 15 / 100) + "\n");
-        L.l("client found");
+//        L.l("client found");
     }
 
     // job for designer \
     public void createDesign() {
         answerFromPattern.onJobDone("time to create design = " + (value * 20 / 100) + "\n");
-        L.l("design created");
+//        L.l("design created");
     }
 
     // job for developer \
     public void writeCode() {
         answerFromPattern.onJobDone("time to write code = " + (value * 50 / 100) + "\n");
-        L.l("code written");
+//        L.l("code written");
     }
 
     // job for tester \
     public void testRelease() {
         answerFromPattern.onJobDone("time to test release = " + (value * 10 / 100) + "\n");
-        L.l("release tested");
+//        L.l("release tested");
     }
 
     // job for director \
     public void divideMoney() {
         answerFromPattern.onJobDone("time to divide money = " + (value * 5 / 100) + "\n");
-        L.l("money divided");
+//        L.l("money divided");
     }
 }
