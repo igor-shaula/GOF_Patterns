@@ -1,4 +1,4 @@
-package igor.shaula.gof_patterns.gof_behavioral.command;
+package com.igor_shaula.patterns_in_pure_java.gof_behavioral.command;
 
 /**
  * @author igor shaula \
