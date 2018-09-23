@@ -1,8 +1,8 @@
 package igor.shaula.gof_patterns.entry_points.gof_behavioral;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
-import igor.shaula.gof_patterns.gof_behavioral.observer.ObservableObject;
-import igor.shaula.gof_patterns.gof_behavioral.observer.ObserverObject;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.observer.ObservableObject;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.observer.ObserverObject;
 
 /**
  * Define a one-to-many dependency between objects where a state change in one object

@@ -1,4 +1,4 @@
-package igor.shaula.gof_patterns.gof_behavioral.observer;
+package com.igor_shaula.patterns_in_pure_java.gof_behavioral.observer;
 
 /**
  * instead of standard java.util.Observable \
