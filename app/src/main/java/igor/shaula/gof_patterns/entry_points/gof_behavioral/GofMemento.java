@@ -1,7 +1,7 @@
 package igor.shaula.gof_patterns.entry_points.gof_behavioral;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
-import igor.shaula.gof_patterns.gof_behavioral.memento.Originator;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.memento.Originator;
 
 /**
  * Without violating encapsulation, capture and externalize an object's internal state

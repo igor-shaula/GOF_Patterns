@@ -1,4 +1,4 @@
-package igor.shaula.gof_patterns.gof_behavioral.memento;
+package com.igor_shaula.patterns_in_pure_java.gof_behavioral.memento;
 
 import igor.shaula.gof_patterns.utils.L;
 
