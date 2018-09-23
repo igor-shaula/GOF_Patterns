@@ -1,1 +1,1 @@
-include ':app', ':patterns_core'
+include ':app', ':patterns_core', ':base_utils'
