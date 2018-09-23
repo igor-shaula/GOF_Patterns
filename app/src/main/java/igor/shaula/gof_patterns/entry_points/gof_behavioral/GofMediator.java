@@ -1,8 +1,8 @@
 package igor.shaula.gof_patterns.entry_points.gof_behavioral;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
-import igor.shaula.gof_patterns.gof_behavioral.mediator.ChatRealization;
-import igor.shaula.gof_patterns.gof_behavioral.mediator.User;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.mediator.ChatRealization;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.mediator.User;
 
 /**
  * Define an object that encapsulates how a set of objects interact.

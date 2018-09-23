@@ -1,15 +1,15 @@
-package igor.shaula.gof_patterns.gof_behavioral.mediator;
+package com.igor_shaula.patterns_in_pure_java.gof_behavioral.mediator;
 
 /**
  * @author igor shaula \
  */
-public class User implements Sender {
+public class Admin implements Sender {
 
     private Chat chat;
 
     private String name;
 
-    public User(Chat chat, String name) {
+    public Admin(Chat chat, String name) {
         this.chat = chat;
         this.name = name;
     }
@@ -20,7 +20,7 @@ public class User implements Sender {
 
     @Override
     public void sendMessage(String message) {
-        // all magic is here \
+        // attention to this method - the trick is here \
         chat.sendMessage(message, this);
     }
 
