@@ -1,10 +1,10 @@
 package igor.shaula.gof_patterns.entry_points.gof_behavioral;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
-import igor.shaula.gof_patterns.gof_behavioral.interpreter.AndExpression;
-import igor.shaula.gof_patterns.gof_behavioral.interpreter.DataExpression;
-import igor.shaula.gof_patterns.gof_behavioral.interpreter.Expression;
-import igor.shaula.gof_patterns.gof_behavioral.interpreter.OrExpression;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.interpreter.AndExpression;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.interpreter.DataExpression;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.interpreter.Expression;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.interpreter.OrExpression;
 
 /**
  * Given a language, define a representation for its grammar along with an interpreter
