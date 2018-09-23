@@ -6,8 +6,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.igor_shaula.base_utils.C;
+
 import igor.shaula.gof_patterns.R;
-import igor.shaula.gof_patterns.utils.PSF;
 
 /**
  * @author igor shaula \
@@ -83,43 +84,43 @@ public class ViewAgent implements View.OnClickListener {
         switch (v.getId()) {
             
             case R.id.bTestChainOfResponsibility:
-                pattern = PSF.CHAIN_OF_RESPONSIBILITY;
+                pattern = C.Case.CHAIN_OF_RESPONSIBILITY;
                 break;
             case R.id.bTestCommand:
-                pattern = PSF.COMMAND;
+                pattern = C.Case.COMMAND;
                 break;
             case R.id.bTestInterpreter:
-                pattern = PSF.INTERPRETER;
+                pattern = C.Case.INTERPRETER;
                 break;
             case R.id.bTestIterator:
-                pattern = PSF.ITERATOR;
+                pattern = C.Case.ITERATOR;
                 break;
             case R.id.bTestMediator:
-                pattern = PSF.MEDIATOR;
+                pattern = C.Case.MEDIATOR;
                 break;
             case R.id.bTestMemento:
-                pattern = PSF.MEMENTO;
+                pattern = C.Case.MEMENTO;
                 break;
             case R.id.bTestObserver:
-                pattern = PSF.OBSERVER;
+                pattern = C.Case.OBSERVER;
                 break;
             case R.id.bTestState:
-                pattern = PSF.STATE;
+                pattern = C.Case.STATE;
                 break;
             case R.id.bTestStrategy:
-                pattern = PSF.STRATEGY;
+                pattern = C.Case.STRATEGY;
                 break;
             case R.id.bTestTemplateMethod:
-                pattern = PSF.TEMPLATE_METHOD;
+                pattern = C.Case.TEMPLATE_METHOD;
                 break;
             case R.id.bTestVisitor:
-                pattern = PSF.VISITOR;
+                pattern = C.Case.VISITOR;
                 break;
             case R.id.bTestBuilderSimple:
-                pattern = PSF.BUILDER_SIMPLE;
+                pattern = C.Case.BUILDER_SIMPLE;
                 break;
             case R.id.bTestBuilderAbstract:
-                pattern = PSF.BUILDER_ABSTRACT;
+                pattern = C.Case.BUILDER_ABSTRACT;
                 break;
         }
         
