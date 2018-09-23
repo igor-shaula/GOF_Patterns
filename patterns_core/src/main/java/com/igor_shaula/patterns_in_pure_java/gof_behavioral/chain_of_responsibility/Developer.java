@@ -1,4 +1,4 @@
-package igor.shaula.gof_patterns.gof_behavioral.chain_of_responsibility;
+package com.igor_shaula.patterns_in_pure_java.gof_behavioral.chain_of_responsibility;
 
 import igor.shaula.gof_patterns.utils.L;
 
