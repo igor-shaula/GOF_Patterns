@@ -1,13 +1,13 @@
 package igor.shaula.gof_patterns.entry_points.gof_behavioral;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
-import igor.shaula.gof_patterns.gof_behavioral.strategy.ActionCoding;
-import igor.shaula.gof_patterns.gof_behavioral.strategy.ActionEating;
-import igor.shaula.gof_patterns.gof_behavioral.strategy.ActionMoving;
-import igor.shaula.gof_patterns.gof_behavioral.strategy.ActionResting;
-import igor.shaula.gof_patterns.gof_behavioral.strategy.ActionSleeping;
-import igor.shaula.gof_patterns.gof_behavioral.strategy.ActionTraining;
-import igor.shaula.gof_patterns.gof_behavioral.strategy.StrategyDeveloper;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.strategy.ActionCoding;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.strategy.ActionEating;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.strategy.ActionMoving;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.strategy.ActionResting;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.strategy.ActionSleeping;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.strategy.ActionTraining;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.strategy.StrategyDeveloper;
 
 /**
  * Allow an object to alter its behavior when its internal state changes.
