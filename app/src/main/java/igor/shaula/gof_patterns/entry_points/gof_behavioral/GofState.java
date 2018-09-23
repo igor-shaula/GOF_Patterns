@@ -1,9 +1,9 @@
 package igor.shaula.gof_patterns.entry_points.gof_behavioral;
 
 import igor.shaula.gof_patterns.general_classes.AnswerFromPattern;
-import igor.shaula.gof_patterns.gof_behavioral.state.ActionSleeping;
-import igor.shaula.gof_patterns.gof_behavioral.state.StateAction;
-import igor.shaula.gof_patterns.gof_behavioral.state.StateDeveloper;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.state.ActionSleeping;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.state.StateAction;
+import com.igor_shaula.patterns_in_pure_java.gof_behavioral.state.StateDeveloper;
 
 /**
  * Allow an object to alter its behavior when its internal state changes.
