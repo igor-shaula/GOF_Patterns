@@ -1,8 +1,7 @@
 package igor.shaula.gof_patterns.general_classes;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-
 import com.igor_shaula.base_utils.C;
 import com.igor_shaula.patterns_in_pure_java.AnswerFromPattern;
 
@@ -21,7 +20,7 @@ import igor.shaula.gof_patterns.entry_points.gof_behavioral.GofVisitor;
 import igor.shaula.gof_patterns.entry_points.gof_creational.GofBuilderAbstract;
 import igor.shaula.gof_patterns.entry_points.gof_creational.GofBuilderSimple;
 
-public class MainActivity extends AppCompatActivity implements
+public class MainActivity extends Activity implements
         ViewAgent.Caller, AnswerFromPattern {
     
     private ViewAgent mViewAgent;

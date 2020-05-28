@@ -1,8 +1,5 @@
+/*
 package com.igor_shaula.base_utils;
-
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.util.Log;
 
 import com.igor_shaula.base_utils.annotations.TypeDoc;
 
@@ -81,4 +78,4 @@ public final class L {
             System.out.println(message);
         }
     }
-}
+}*/

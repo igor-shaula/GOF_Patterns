@@ -12,16 +12,16 @@
         style="@style/WrapWrap"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/this_text_will_change"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        android:text="@string/this_text_will_change"/>
+<!--        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />-->
 
     <EditText
         android:id="@+id/etNewData"
         style="@style/MatchWrap.Gravity_Center"
         android:layout_below="@id/tvResult"
         android:hint="@string/set_new_value"
-        android:inputType="numberDecimal"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        android:inputType="numberDecimal"/>
+<!--        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />-->
 
     <ScrollView
         style="@style/MatchMatch"
